@@ -1,0 +1,91 @@
+---
+Processing started for image of size::
+3024
+---
+Resized image tensor shape::
+[
+  1,
+  4,
+  684,
+  1024
+]
+---
+Image data tensor created::
+[
+  1,
+  3,
+  684,
+  1024
+]
+---
+Image data tensor shape after conversion::
+[
+  1,
+  3,
+  684,
+  1024
+]
+---
+Tensorflow tensor shape::
+[
+  1,
+  3,
+  684,
+  1024
+]
+---
+Tensorflow tensor reshaped::
+[
+  3,
+  684,
+  1024
+]
+---
+Tensorflow tensor transposed::
+[
+  684,
+  1024,
+  3
+]
+---
+ORT tensor shape after transpose and scale::
+[
+  684,
+  1024,
+  3
+]
+---
+Encoder Session created::
+{
+  "handler": {
+    "sessionId": 117058624,
+    "inputNames": [
+      "input_image"
+    ],
+    "outputNames": [
+      "image_embeddings"
+    ]
+  }
+}
+---
+Encoding result obtained::
+{
+  "image_embeddings": {
+    "dims": [
+      1,
+      256,
+      64,
+      64
+    ],
+    "type": "float32",
+    "size": 1048576
+  }
+}
+---
+Image embeddings shape::
+[
+  1,
+  256,
+  64,
+  64
+]
